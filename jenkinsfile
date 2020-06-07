@@ -1,0 +1,10 @@
+node{
+    stage("gitcheckout"){
+        git "https://github.com/SaiPranavReddy/Demo.git"
+    }
+    stage("compile"){
+        bat "javac Hello.java"
+        bat "java Hello"
+    }
+}
+
